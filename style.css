@@ -1,0 +1,67 @@
+* {
+    font-family: arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    align-items: center; justify-content: center;
+    min-height: 100vh;
+    background-size: cover;
+    text-align: center;
+  }
+ 
+  .widget-wrap {
+    width: 600px;
+    padding: 0 30px 30px 30px; 
+    border-radius: 20px;
+    background: rgba(61, 200, 255, 0.14);
+    border: 2px solid rgba(206, 236, 255, 0.425);
+  }
+
+  .widget-wrap h1{
+    font-family: 'Russo One', sans-serif;
+    font-size: 3rem;
+  }
+  
+  #quizWrap {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  #quizQn {
+    padding: 20px;
+    background: #4bbffd;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  #quizAns {
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+  }
+  #quizAns input[type=radio] { display: none; }
+  #quizAns label {
+    background: white;
+    border: 1px solid #ffffffc8;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  #quizAns label.correct {
+    background: #90ff58;
+    border: 1px solid #60a03f;
+  }
+  #quizAns label.wrong {
+    background: #ff0213;
+    border: 1px solid #a73434;
+  }
+  
